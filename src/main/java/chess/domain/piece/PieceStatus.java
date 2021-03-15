@@ -2,10 +2,10 @@ package chess.domain.piece;
 
 public class PieceStatus {
     private final String position;
-    private final Piece chessPiece;
+    private final Piece piece;
 
-    public PieceStatus(String position, Piece chessPiece) {
+    public PieceStatus(String position, Piece piece) {
         this.position = position;
-        this.chessPiece = chessPiece;
+        this.piece = piece;
     }
 }
