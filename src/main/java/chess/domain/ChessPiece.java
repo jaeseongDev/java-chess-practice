@@ -1,20 +1,26 @@
 package chess.domain;
 
 public enum ChessPiece {
-    ROOK("R"),
-    KING("K"),
-    QUEEN("Q"),
-    BISHOP("B"),
-    KNIGHT("N"),
-    PAWN("P");
+    ROOK("R", "r"),
+    KING("K", "k"),
+    QUEEN("Q", "q"),
+    BISHOP("B", "b"),
+    KNIGHT("N", "n"),
+    PAWN("P", "p");
 
-    private final String value;
+    private final String valueWhenBlack;
+    private final String valueWhenWhite;
 
-    ChessPiece(String value) {
-        this.value = value;
+    ChessPiece(String valueWhenBlack, String valueWhenWhite) {
+        this.valueWhenBlack = valueWhenBlack;
+        this.valueWhenWhite = valueWhenWhite;
     }
 
-    public String getValue() {
-        return value;
+    public String getValueWhenBlack() {
+        return valueWhenBlack;
+    }
+
+    public String getValueWhenWhite() {
+        return valueWhenWhite;
     }
 }
