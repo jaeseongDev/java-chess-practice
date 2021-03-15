@@ -10,6 +10,4 @@ public class ChessStatus {
         this.isBlack = isBlack;
         this.chessPiece = chessPiece;
     }
-
-
 }

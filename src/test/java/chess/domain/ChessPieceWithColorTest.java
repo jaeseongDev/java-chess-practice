@@ -5,15 +5,14 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThatCode;
 
-public class ChessStatusTest {
+public class ChessPieceWithColorTest {
     @Test
-    @DisplayName("체스판 위에 있는 체스말을 제대로 생성하는 지")
+    @DisplayName("색깔을 가진 체스말을 제대로 생성하는 지")
     public void init() {
-        String position = "b2";
-        boolean isBlack = true;
+        ChessPieceColor color = ChessPieceColor.BLACK;
         ChessPiece chessPiece = ChessPiece.KING;
         assertThatCode(() -> {
-            new ChessStatus(position, isBlack, chessPiece);
+            new ChessPieceWithColor(chessPiece, color);
         }).doesNotThrowAnyException();
     }
 }

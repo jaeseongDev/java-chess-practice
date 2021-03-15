@@ -1,6 +1,6 @@
 package chess.domain;
 
-public enum ChessPiece {
+public enum ChessPiece{
     ROOK("R", "r"),
     KING("K", "k"),
     QUEEN("Q", "q"),
