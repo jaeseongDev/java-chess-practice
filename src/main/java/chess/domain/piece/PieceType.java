@@ -1,6 +1,6 @@
-package chess.domain;
+package chess.domain.piece;
 
-public enum ChessPiece{
+public enum PieceType {
     ROOK("R", "r"),
     KING("K", "k"),
     QUEEN("Q", "q"),
@@ -11,7 +11,7 @@ public enum ChessPiece{
     private final String valueWhenBlack;
     private final String valueWhenWhite;
 
-    ChessPiece(String valueWhenBlack, String valueWhenWhite) {
+    PieceType(String valueWhenBlack, String valueWhenWhite) {
         this.valueWhenBlack = valueWhenBlack;
         this.valueWhenWhite = valueWhenWhite;
     }

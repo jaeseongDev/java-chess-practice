@@ -1,18 +1,18 @@
-package chess.domain;
+package chess.domain.piece;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThatCode;
 
-public class ChessPieceWithColorTest {
+public class PieceTest {
     @Test
     @DisplayName("색깔을 가진 체스말을 제대로 생성하는 지")
     public void init() {
-        ChessPieceColor color = ChessPieceColor.BLACK;
-        ChessPiece chessPiece = ChessPiece.KING;
+        PieceColor color = PieceColor.BLACK;
+        PieceType type = PieceType.KING;
         assertThatCode(() -> {
-            new ChessPieceWithColor(chessPiece, color);
+            new Piece(type, color);
         }).doesNotThrowAnyException();
     }
 }
