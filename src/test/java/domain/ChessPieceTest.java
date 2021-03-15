@@ -8,7 +8,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class ChessPieceTest {
-    @ParameterizedTest
+    @ParameterizedTest(name = "{displayName}")
     @DisplayName("체스 말을 정상적으로 생성하는 지 테스트")
     @CsvSource(value = {"ROOK:R", "KING:K", "QUEEN:Q", "BISHOP:B", "KNIGHT:N", "PAWN:P"}, delimiter = ':')
     public void init(ChessPiece chessPiece, String value) {
