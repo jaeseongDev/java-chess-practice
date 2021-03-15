@@ -27,4 +27,8 @@ public enum PieceType {
     public String getValueWhenWhite() {
         return valueWhenWhite;
     }
+
+    public MoveStrategy getMoveStrategy() {
+        return moveStrategy;
+    }
 }
